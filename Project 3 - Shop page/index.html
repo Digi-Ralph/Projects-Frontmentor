@@ -1,116 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Room homepage</title>
+   <link rel="stylesheet" href="./style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+   <title>Document</title>
 </head>
 <body>
-  <!-- navigation -->
-  <nav class="nav-bar">
-    <div class="nav-item">
-   <div class="container-logo">
-     <img src="./images/logo.svg" alt="" width="150%"  height="90%">
-   </div> 
-   <ul>
-   <li id="list-item"><a href="#"></a>Home</li>
-   <li id="list-item"><a href="#"></a>Shop</li>
-   <li id="list-item"><a href="#"></a>About</li>
-   <li id="list-item"><a href="#"></a>Contact</li>
-  </ul>
-</div>
-  </nav>
- <!-- header -->
- <header>
-   <div class="div-img" style="border: 1px solid red;">
-    <!-- <img src="./images/desktop-image-hero-1.jpg" alt="" class="container-img" width="100%" height="100%" id="img-itemOne"> -->
-    <!-- <img src="./images/desktop-image-hero-2.jpg" alt="" class="container-img" width="100%" height="100%" id="img-itemTwo"> -->
-    <!-- <img src="./images/desktop-image-hero-3.jpg" alt="" class="container-img" width="100%" height="100%" id="img-itemThree"> -->
+<div class="container">
+   <div class="container-img-item"></div>
+   <div class="container-text-item">
+      <div class="text-container-main">
+          <h1 class="title">Discover innovative ways to decorate</h1> 
+          <p class="description">We provide unmatched quality, comfort, and style for property owners
+         across the country. Our experts combine form and function in
+         bringing your vision to life. Create a room in your own style with
+         our collection and make your property a reflection of you and what
+         you love.</p>
+          <a href="#" class="button-item">shop now <img src="./images/icon-arrow.svg" alt="icon-arrow"></a>
       </div>
+   </div>
+   <div class="button-arrow-item">
+      <div>
+    <button id="item-button"  class="left-item"><img  src="./images/icon-angle-left.svg" alt="icon-arrow"></button>
+    <button id="item-button"  class="right-item"><img  src="./images/icon-angle-right.svg" alt="icon-arrow"></button>
+   </div>
+   </div>
+   <!-- Nav -->
+   <div id="mobile-nav">
 
-       
-  <!-- <button class="left-click"><img src="./images/icon-angle-left.svg" alt="right icon-arrow"></button> -->
-  <!-- <button class="right-click"><img src="./images/icon-angle-right.svg" alt="icon-angle-left"></button> -->
+      <img src="./images/icon-hamburger.svg" alt="icon-hamburger" class="mobilenav">
+   </div>
+   <div id="logo-container">
+      <img  id="logo-img" src="./images/logo.svg" alt="">
+   </div>
 
-      <!-- <div class="button-arrow"></div> -->
-    </div>
- <div class="container-table">
-   
-
-<div id="container-item">
- <div class="container-one">
-  <h1 id="title-container">Discover innovative ways to decorate</h1> 
-  <p id="text-container">We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.</p>
- <a href="#" id="button-item">Shop now <img src="./images/icon-arrow.svg" alt=""></a> 
+   <nav class="navbar close " >
+      <div class="nav-container">
+         <div id="mobile-close">
+            <img src="./images/icon-close.svg" alt="">
+         </div>
+      <ul class="nav-list">
+         <li id="list"><a href="#"></a>Home</li>
+         <li id="list"><a href="#"></a>Shop</li>
+         <li id="list"><a href="#"></a>About</li>
+         <li id="list"><a href="#"></a>Contact</li>
+      </ul>
+      </div>
+   </nav>
+<!-- Nav -->
+    
+   <div class="container-footer">
+      <div class="container-img-black"></div>
+      <div class="container-text">
+         <div class="containet-text-footer">
+                  <h1 class="footer-title">about our furniture</h1>
+                  <p class="footer-description">
+                     Our multifunctional collection blends design and function to suit
+                     your individual taste. Make each room unique, or pick a cohesive
+                     theme that best express your interests and what inspires you. Find
+                     the furniture pieces you need, from traditional to contemporary
+                     styles or anything in between. Product specialists are avilable to
+                     help you create your dream space.
+                  </p>
+         </div>
+      </div>
+      <div class="container-img-white"></div>
+      
+   </div>
+   <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq">FrontendMentor</a>. Coded
+         by<a>Richard Ray</a></p>
+   </div>
 </div>
-</div>
-<!-- To replace with javaCreep -->
-<div class="container-two">
-<h1 id="title-container" >We are available all across the globe</h1>
-  <p id="text-container">With stores all over the world, it's easy for you to find furniture for your home or place of business.
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
-  store locator. Any questions? Don't hesitate to contact us today.</p>
-  <a href="#" id="button-item">Shop now <img src="./images/icon-arrow.svg" alt=""></a>
-
-</div>
-  <div class="container-three">
-<h1 id="title-container">Manufactured with the best materials
-</h1>
-<p id="text-container">Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
-to ensure that every product is made as perfect and as consistent as possible. With three decades of
-experience in this industry, we understand what customers want for their home and office.
-</p>
-<a href="#" id="button-item">Shop now <img src="./images/icon-arrow.svg" alt=""></a>
-  </div>
-<!-- To replace with javaCreep -->
-
-</header>
-<!-- header ends * what does life mean ? -->
-  
-
-
-<!-- footer  -->
- <footer>
-   <div class="container-img-black">
- 
-  </div>
-     <div class="container-footer">
-      <div class="container-text-footer">
-     <h1 class="title-item">About our furniture</h1>
-     <p class="text-item">Our multifunctional collection blends design and function to suit your individual taste.
-     Make each room unique, or pick a cohesive theme that best express your interests and what
-     inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-     or anything in between. Product specialists are available to help you create your dream space.</p>
-    </div>
-  </div>
-  <div class="container-img-light">
-
-  </div>
- </footer>
-
-
-  
- 
-
- 
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Richard Ray</a>.
-  </div>
 </body>
+    <script src="./javascript.js"></script>
 </html>
